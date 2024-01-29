@@ -1,0 +1,12 @@
+$color-light: #FAF4D3;
+$bg-color: #faf8ee;
+$color-dark: #4C4C4C;
+$color-light-accent: #B8B8F3;
+$shadow: 0 0 5px $color-dark;
+
+
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}

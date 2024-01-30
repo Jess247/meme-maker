@@ -6,11 +6,15 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   color: #4C4C4C;
   background: #faf8ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -23,6 +27,7 @@ body {
 }
 .container .search-bar {
   background: #FAF4D3;
+  width: min(80%, 800px);
   height: 60px;
   padding-left: 0.8em;
   border-radius: 50px;
@@ -30,7 +35,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   box-shadow: 0 0 5px #4C4C4C;
-  margin-bottom: 2em;
+  margin: 0 auto 2em auto;
 }
 .container .search-bar .form {
   display: flex;
@@ -98,6 +103,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+.container .modal-container .modal .modal-img {
+  width: 400px;
 }
 .container .hidden {
   display: none;
@@ -105,11 +114,8 @@ body {
 
 .footer {
   width: 100%;
-  position: fixed;
-  bottom: 0;
   text-align: center;
   padding: 1em;
-  margin-top: 2em;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -17,7 +17,7 @@
             <img class="img" src="./img/cat.png" alt="Waving cat icon.">
         </div>
         <div class="search-bar">
-            <form class="form">
+            <form class="form" id="form">
      
                     <label for="select-emotion">Generate your meme: </label>
                     <select name="selectEmotion" id="select-emotion" class="select-emotion">
@@ -27,16 +27,12 @@
                 <button class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-        <section class="thumbnails">
-            <img class="thumbnail" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZtYnZuM3Jjc3NkbnFzaHo0MDc3N3pkNmR4MzlqMXB3ZTY5cWY4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif" alt="">
-            <img class="thumbnail" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZtYnZuM3Jjc3NkbnFzaHo0MDc3N3pkNmR4MzlqMXB3ZTY5cWY4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif" alt="">
-            <img class="thumbnail" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZtYnZuM3Jjc3NkbnFzaHo0MDc3N3pkNmR4MzlqMXB3ZTY5cWY4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif" alt="">
-            <img class="thumbnail" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZtYnZuM3Jjc3NkbnFzaHo0MDc3N3pkNmR4MzlqMXB3ZTY5cWY4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif" alt="">
+        <section class="thumbnails" id="thumbnails">
         </section>
         <section class="modal-container">
-            <div class="modal hidden">
+            <div class="modal hidden" id="modal">
                 <button class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
-                <div class="modal-inner">
+                <div class="modal-inner" id="modal-inner">
                     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzZtYnZuM3Jjc3NkbnFzaHo0MDc3N3pkNmR4MzlqMXB3ZTY5cWY4cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7kn27lnYSAE9O/giphy.gif" alt="">
                 </div>
             </div>
@@ -44,6 +40,6 @@
         <a class="hidden" href="https://www.flaticon.com/free-icons/lucky-cat" title="lucky-cat icons">Lucky-cat icons created by imaginationlol - Flaticon</a>
     </main>
     <footer class="footer">&copy;Jessica Singletary <span id="full-year">2024</span></footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

@@ -31,20 +31,22 @@ body {
   height: 60px;
   padding-left: 0.8em;
   border-radius: 50px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   box-shadow: 0 0 5px #4C4C4C;
   margin: 0 auto 2em auto;
 }
 .container .search-bar .form {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
-.container .search-bar .form .select-emotion {
+.container .search-bar .form .custom-select {
   flex-grow: 2;
+  display: relative;
+}
+.container .search-bar .form .custom-select .select-emotion {
+  width: 100%;
   padding: 0.5em;
   background: #FAF4D3;
   border: none;
@@ -65,8 +67,9 @@ body {
 }
 .container .thumbnails {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1em;
 }
 .container .thumbnails .thumbnail {
@@ -75,8 +78,8 @@ body {
 }
 .container .modal-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .container .modal-container .modal {
   position: fixed;
@@ -101,8 +104,8 @@ body {
   height: 75%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .container .modal-container .modal .modal-img {

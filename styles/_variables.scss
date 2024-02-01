@@ -6,7 +6,25 @@ $shadow: 0 0 5px $color-dark;
 
 
 
-@mixin flexCenter {
-    display: flex;
-    align-items: center;
+@mixin flex ($direction) {
+    @if $direction == center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    @else if $direction == column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    @else if ¢direction == end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    @else if $direction == column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
 }
